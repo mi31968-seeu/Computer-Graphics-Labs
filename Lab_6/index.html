@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Computer Graphics – Lab 6 (PLY Model)</title>
+  <!-- Let this project work in VS Code Live Server without npm install. -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }
+  }
+  </script>
+  <style>
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; font-family: Arial, sans-serif; }
+    body { background: #cccccc; }
+    canvas { display: block; }
+    .info { position: fixed; top: 16px; left: 16px; background: rgba(18, 27, 45, 0.91);
+            color: white; padding: 16px 20px; border-radius: 11px; z-index: 1;
+            max-width: 310px; line-height: 1.45; box-shadow: 0 10px 30px #0002; }
+    .info h1 { margin: 0 0 8px; font-size: 19px; }
+    .info p { margin: 6px 0; font-size: 13px; }
+    .info button { background: #49d9b6; border: 0; padding: 9px 13px; border-radius: 7px;
+                   font-weight: bold; cursor: pointer; margin-top: 8px; }
+    #status { color: #c9e4ff; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <div class="info">
+    <h1>Lab 6 – PLY 3D Models</h1>
+    <p>Three copies of a custom low-poly rocket are shown at different distances.</p>
+    <p><strong>Press Space</strong> to switch perspective / orthographic cameras.</p>
+    <p id="camera-name">Camera: Perspective</p>
+    <p id="status">Loading model...</p>
+    <button id="toggle-camera" type="button">Switch camera</button>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
