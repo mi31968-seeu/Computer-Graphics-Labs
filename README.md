@@ -41,8 +41,6 @@ Then open **http://localhost:8000/** and choose any lab. **Do not simply double-
 - **Challenge:** mandatory **ray–plane intersection** using `THREE.Ray`, `THREE.Plane`, ray direction and hit point.
 - Adjust vector components, ray origin and slope to see results update.
 
-**Note:** The professor's announcement lists the three difficulty levels but does not provide the complete Lab 2 assignment sheet. The exercise here covers common vector topics and the explicitly mandatory ray–plane task. Compare with the original Lab 2 handout in case specific additional exercises are required.
-
 ### Lab 3 — Solar System
 - Sun is in the center; Earth and Mars revolve around it.
 - The Moon revolves around Earth using a nested pivot (`Object3D` / `Group`).
@@ -59,26 +57,6 @@ Then open **http://localhost:8000/** and choose any lab. **Do not simply double-
 - `geometry.setAttribute('position', ...)`, `geometry.setIndex(indices)`, and `computeVertexNormals()` form the mesh.
 - Two models: a **hollow vase** and a **faceted crystal**.
 - Adjustable number of sides and optional triangle-wireframe overlay.
-
-## Git / GitHub submission
-
-The ZIP distribution includes a `.git` folder with **five local commits, one for each lab**. Extract the entire ZIP, keeping hidden files (`.git`) included. Verify them with:
-
-```bash
-git log --oneline
-```
-
-Create an **empty** repository on GitHub (do not initialize it with a README). From the extracted folder run:
-
-```bash
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-git branch -M main
-git push -u origin main
-```
-
-Replace the URL with the URL GitHub gives you. GitHub may ask you to sign in using GitHub Desktop, the GitHub CLI, or a credential helper; a GitHub account is required for the final upload. **GitHub's browser "Upload files" option does not preserve these local commits**, so push through Git/GitHub Desktop instead.
-
-> The included commits use a placeholder local email (`student@example.invalid`), because no verified Git commit email was provided. Before submission, you can configure your proper GitHub email for new commits with `git config user.email "your-verified-email"`. Existing commits retain the placeholder author until rewritten. The five distinct commit timestamps and changes remain visible in `git log`.
 
 ## File layout
 
