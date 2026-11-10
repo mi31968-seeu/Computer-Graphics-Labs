@@ -19,4 +19,4 @@ This repository contains 6 Computer Graphics labs created using JavaScript and T
 
 Open the project in Visual Studio Code and use Live Server to run the HTML files.
 
-Each lab is stored in its own folder.
+"Each lab is stored in its own folder"
